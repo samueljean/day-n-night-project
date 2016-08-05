@@ -1,4 +1,7 @@
-$('#orb').click( function() {
+$( document ).ready(function() {
+    console.log( "ready!" );
+
+    $('#orb').click( function() {
   if ($(this).hasClass('sun')) {
             $(this).removeClass('sun').addClass('moon');
         }else {
@@ -8,6 +11,7 @@ $('#orb').click( function() {
     $('body').removeClass('light').addClass('night');
 }
 else {
+  
     $('body').removeClass('night').addClass('light');
 }
   if ($('#moonspot1').hasClass('visible')) {
@@ -16,4 +20,5 @@ else {
     $('#moonspot1').addClass('visible');
 }
   
+});
 });
